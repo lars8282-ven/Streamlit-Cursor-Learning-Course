@@ -1,0 +1,67 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local Python installation (shouldn't be in repo)
+Lib/
+Scripts/
+etc/
+share/
+__pycache__/
+*.pyc
+
+# React/Vite project (separate project)
+node_modules/
+src/
+dist/
+dist-ssr/
+index.html
+server.js
+package.json
+package-lock.json
+vite.config.js
+tailwind.config.js
+postcss.config.js
+README.md
+README_CHATBOT.md
+
