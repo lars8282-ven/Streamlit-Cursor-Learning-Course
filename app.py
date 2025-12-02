@@ -94,6 +94,7 @@ def generate_reservoir_data():
         'Net_Pay_ft': np.random.normal(100, 20, len(zones)),
         'Oil_Saturation_%': np.random.normal(65, 10, len(zones)),
         'Water_Saturation_%': np.random.normal(35, 10, len(zones)),
+        'Reservoir_Type': np.random.choice(['Oil', 'Gas', 'Water'], len(zones), p=[0.5, 0.3, 0.2]),
         'Pressure_PSI': np.random.normal(2500, 300, len(zones)),
     }
     return pd.DataFrame(data)
