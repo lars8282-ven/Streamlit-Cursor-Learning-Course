@@ -10,7 +10,7 @@ warnings.filterwarnings('ignore')
 # Page configuration
 st.set_page_config(
     page_title="Oil & Gas Analytics Dashboard",
-    page_icon="🛢️",
+    page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -35,7 +35,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown('<h1 class="main-header">🛢️ Oil & Gas Analytics Dashboard</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Oil & Gas Analytics Dashboard</h1>', unsafe_allow_html=True)
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
@@ -106,7 +106,7 @@ reservoir_df = generate_reservoir_data()
 
 # Overview Page
 if page == "Overview":
-    st.header("📊 Dashboard Overview")
+    st.header("Dashboard Overview")
     
     # Key Metrics
     col1, col2, col3, col4 = st.columns(4)
@@ -189,7 +189,7 @@ if page == "Overview":
 
 # Production Analytics Page
 elif page == "Production Analytics":
-    st.header("📈 Production Analytics")
+    st.header("Production Analytics")
     
     # Filters
     col1, col2, col3 = st.columns(3)
@@ -278,7 +278,7 @@ elif page == "Production Analytics":
 
 # Well Performance Page
 elif page == "Well Performance":
-    st.header("🔧 Well Performance Analysis")
+    st.header("Well Performance Analysis")
     
     # Well Selection
     selected_well = st.selectbox("Select Well", well_df['Well_ID'].unique())
@@ -383,7 +383,7 @@ elif page == "Well Performance":
 
 # Reservoir Analysis Page
 elif page == "Reservoir Analysis":
-    st.header("🌊 Reservoir Analysis")
+    st.header("Reservoir Analysis")
     
     st.subheader("Reservoir Properties by Zone")
     
@@ -498,7 +498,7 @@ elif page == "Reservoir Analysis":
 
 # Economic Analysis Page
 elif page == "Economic Analysis":
-    st.header("💰 Economic Analysis")
+    st.header("Economic Analysis")
     
     # Economic Parameters
     st.subheader("Economic Parameters")
@@ -628,7 +628,7 @@ elif page == "Economic Analysis":
 
 # Time Series Analysis Page
 elif page == "Time Series Analysis":
-    st.header("📅 Time Series Analysis")
+    st.header("Time Series Analysis")
     
     # Time Series Selection
     col1, col2 = st.columns(2)
